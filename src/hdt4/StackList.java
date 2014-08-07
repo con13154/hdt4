@@ -1,22 +1,29 @@
 /*
- * Algoritmos y Estructura de Datos
- * Hoja de trabajo 4
- * Isa Contreras 13154 / Erick de Mata 13648
- * StackArrayList.java
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
  */
 
 package hdt4;
 
-import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
 
-public class StackArrayList<E> extends AbstractStack<E>
-{
-	protected ArrayList<E> data;
+/**
+ *
+ * @author E. de Mata
+ */
+public class StackList<E> extends AbstractStack<E>{
+    public ListFactory factorList = new ListFactory();
+    protected List<E> data = (List<E>) factorList.getList(parametro());
+    String opcion; 
 
-	public StackArrayList()
+	public String parametro()
 	// post: constructs a new, empty stack
 	{
-		data = new ArrayList<E>();
+		//Aca se pone que parametro se quiere encontrar 
+            opcion = JOptionPane.showInputDialog("Ingrese 1 para lista circular.\n2. para lista simple.\n3. para lista doble", opcion);
+            return opcion;
 	}
 
 	public void push(E item)
