@@ -67,6 +67,7 @@ import javax.swing.JOptionPane;
                 String dato =  Character.toString(sCadenaSinBlancos.charAt(x));
                 //Si el caracter no es una operación se guarda el dato
                 if( (dato.equals("+") || dato.equals("-") || dato.equals("*") || dato.equals("/")) != true){
+                    
                     miStack.push(dato);
                 }
                 //Si el caracter es una suma saca de la pila los dos ultimos ingresado y realiza operacion
