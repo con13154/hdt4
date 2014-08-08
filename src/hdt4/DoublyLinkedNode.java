@@ -36,5 +36,15 @@ public DoublyLinkedNode(E v,
 
     void setNext(Object object) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    } 
+    
+    public DoublyLinkedNode<E> previous()
+    {
+        return previousElement;
+    }
+    
+    public E value()
+    {
+        return data;
     }
 }
