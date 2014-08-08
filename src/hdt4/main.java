@@ -8,9 +8,13 @@ package hdt4;
 
 public class main {
     public static void main(String[] args) {
-        Singlenton instancia = new Singlenton();
+    try{
         Hdt4 calculadora= new Hdt4();
         calculadora.calculadora4();
+    }
+    catch (Singlenton e)
+    {System.out.println(e.getMessage());}
+ 
     }
     
 }
