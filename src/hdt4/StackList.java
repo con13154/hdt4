@@ -15,15 +15,15 @@ import javax.swing.JOptionPane;
  */
 public class StackList<E> extends AbstractStack<E>{
     public ListFactory factorList = new ListFactory();
-    protected List<E> data = (List<E>) factorList.getList(parametro());
-    String opcion; 
+    protected List<E> data = (List<E>) factorList.getList(parametro1());
+    String opcion1; 
 
-	public String parametro()
+	public String parametro1()
 	// post: constructs a new, empty stack
 	{
 		//Aca se pone que parametro se quiere encontrar 
-            opcion = JOptionPane.showInputDialog("Ingrese 1 para lista circular.\n2. para lista simple.\n3. para lista doble", opcion);
-            return opcion;
+            opcion1 = JOptionPane.showInputDialog("Elegir lista a utilizar: \n1) lista circular.\n2) lista simple.\n3) lista doble");
+            return opcion1;
 	}
 
 	public void push(E item)

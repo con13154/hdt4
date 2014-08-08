@@ -13,20 +13,12 @@ import java.io.FileReader;
 import java.io.IOException;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Isa
- */
-public class Hdt4 {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    public class Hdt4 {
         // TODO code application logic here
         //Stack<String> miStack = new StackVector<String>(); 
-        StackFactory factor = new StackFactory();
-        Stack<String> miStack = factor.getStack(parametro()); 
+        public StackFactory factor = new StackFactory();
+        public Stack<String> miStack = factor.getStack(parametro()); 
         
         
         int numero;
@@ -36,10 +28,17 @@ public class Hdt4 {
         String opcion;
         // TODO code application logic here
         //Detección del texto en el que se encuentra la operación
+        
+     
+        public String parametro(){
+            opcion = JOptionPane.showInputDialog(".CALCULADORA.\nElegir Almacenamiento a utilizar: \n 1) Array List \n 2) Vector \n 3) Tipo Lista");
+            return opcion;
+        }
         File f = new File( "src/texto.txt" );
         
         BufferedReader entrada;
-     
+        
+        public void calculadora4() {
         try {
        
         entrada = new BufferedReader( new FileReader( f ) );
@@ -105,5 +104,6 @@ public class Hdt4 {
         }
         }
     }
+    
     
 
