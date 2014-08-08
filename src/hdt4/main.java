@@ -8,6 +8,7 @@ package hdt4;
 
 public class main {
     public static void main(String[] args) {
+        Singlenton instancia = new Singlenton();
         Hdt4 calculadora= new Hdt4();
         calculadora.calculadora4();
     }
