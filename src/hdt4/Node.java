@@ -1,10 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Algoritmos y Estructura de Datos
+ * Hoja de trabajo 4
+ * Isa Contreras 13154 / Erick de Mata 13648
+ * Node.java
+*Clase utilizada para el correcto funcionamiento de las clases SimplyLinked y Circular
  */
 
-package hdt4;
+//package hdt4;
 
 /**
  *

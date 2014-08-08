@@ -3,9 +3,11 @@
  * Hoja de trabajo 4
  * Isa Contreras 13154 / Erick de Mata 13648
  * Hdt4.java
+* Clase utilizada para pedir al usuario que tipo de implementacion utilizara
+*Tambien es el encargado de realizar la coneccion con el texto que contiene la operacion
  */
 
-package hdt4;
+//package hdt4;
 
 import java.io.BufferedReader;
 import java.io.File;

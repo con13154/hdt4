@@ -3,9 +3,10 @@
  * Hoja de trabajo 4
  * Isa Contreras 13154 / Erick de Mata 13648
  * StackArrayList.java
+*Implementacion de un tipo de Stack
  */
 
-package hdt4;
+//package hdt4;
 
 import java.util.ArrayList;
 

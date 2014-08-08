@@ -1,10 +1,11 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Algoritmos y Estructura de Datos
+ * Hoja de trabajo 4
+ * Isa Contreras 13154 / Erick de Mata 13648
+ * StackList.java
  */
 
-package hdt4;
+//package hdt4;
 
 import java.util.List;
 import javax.swing.JOptionPane;
@@ -15,15 +16,15 @@ import javax.swing.JOptionPane;
  */
 public class StackList<E> extends AbstractStack<E>{
     public ListFactory factorList = new ListFactory();
-    protected List<E> data = (List<E>) factorList.getList(parametro1());
-    String opcion1; 
+    protected List<E> data = (List<E>) factorList.getList(parametro());
+    String opcion; 
 
-	public String parametro1()
+	public String parametro()
 	// post: constructs a new, empty stack
 	{
 		//Aca se pone que parametro se quiere encontrar 
-            opcion1 = JOptionPane.showInputDialog("Elegir lista a utilizar: \n1) lista circular.\n2) lista simple.\n3) lista doble");
-            return opcion1;
+            opcion = JOptionPane.showInputDialog("Elegir lista a utilizar: \n1) lista circular.\n2) lista simple.\n3) lista doble",opcion);
+            return opcion;
 	}
 
 	public void push(E item)

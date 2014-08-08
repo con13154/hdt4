@@ -3,9 +3,10 @@
  * Hoja de trabajo 4
  * Isa Contreras 13154 / Erick de Mata 13648
  * AbstractStack.java
+*Clase abstracta que maneja el Stack
  */
 
-package hdt4;
+//package hdt4;
 
 abstract public class AbstractStack<E> implements Stack<E>
 {

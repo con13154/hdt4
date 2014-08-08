@@ -3,9 +3,10 @@
  * Hoja de trabajo 4
  * Isa Contreras 13154 / Erick de Mata 13648
  * Stack.java
+* Conjunto de metodos utilizados por las clases ue implementen a Stack
  */
 
-package hdt4;
+//package hdt4;
 
 public interface Stack<E> 
 {
